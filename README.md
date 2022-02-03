@@ -10,7 +10,7 @@ node index
 
 node analysis
 
-Для своего собственного файла для логирования
+## Для своего собственного файла логирования изпользовать
 
 node index -f new_file или node index --file new_file
 
