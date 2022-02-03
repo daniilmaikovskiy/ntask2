@@ -6,11 +6,6 @@ const { DEFAULT_LOG_NAME, LOGS_DIR } = require('./consts');
 const args = yargs(hideBin(process.argv)).argv;
 
 const userFile = args.f || args.file;
-
-if (userFile) {
-  
-}
-
 const file = `${LOGS_DIR}/${userFile || DEFAULT_LOG_NAME}`;
 
 const readerStream = fs.createReadStream(file, { highWaterMark: 32768 });
